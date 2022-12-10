@@ -147,11 +147,11 @@ func (k Keeper) HandleAndCloseVote(ctx sdk.Context, ConflictVote types.ConflictV
 		}
 
 		eventData["winner"] = winnersAddr
-		eventData["winnerVotes%"] = winnerVotersStake.ToDec().QuoInt(totalVotes).String()
+		eventData["winnerVotes%"] = winnerVotersStake.MulRaw(100).Quo(totalVotes).String()
 
 		//punish the frauds(the provider that was found lying and all the voters that voted for him) and fill the reward pool
 		//we need to finish the punishment before rewarding to fill up the reward pool
-		if ConsensusVote && winnerVotersStake.ToDec().QuoInt(totalVotes).GTE(k.MajorityPercent(ctx)) {
+		if ConsensusVote && winnerVotersStake.MulRaw(100).Quo(totalVotes).GTE(k.MajorityPercent(ctx).MulInt64(100).RoundInt()) {
 			for _, vote := range ConflictVote.Votes {
 				if vote.Result != winner && !slices.Contains(providersWithoutVote, vote.Address) { //punish those who voted wrong, voters that didnt vote already got punished
 					accAddress, err := sdk.AccAddressFromBech32(vote.Address)

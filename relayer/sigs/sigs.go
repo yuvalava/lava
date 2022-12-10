@@ -19,7 +19,7 @@ import (
 )
 
 func GetKeyName(clientCtx client.Context) (string, error) {
-	_, name, _, err := client.GetFromFields(clientCtx.Keyring, clientCtx.From, false)
+	_, name, _, err := client.GetFromFields(clientCtx, clientCtx.Keyring, clientCtx.From)
 	if err != nil {
 		return "", err
 	}
@@ -171,9 +171,9 @@ func ValidateSignerOnVRFData(signer sdk.AccAddress, dataReliability pairingtypes
 	if err != nil {
 		return false, fmt.Errorf("RecoverPubKeyFromVRFData: %w", err)
 	}
-	signerAccAddress, err := sdk.AccAddressFromHex(pubKey.Address().String()) //signer
+	signerAccAddress, err := sdk.AccAddressFromHexUnsafe(pubKey.Address().String()) //signer
 	if err != nil {
-		return false, fmt.Errorf("AccAddressFromHex : %w", err)
+		return false, fmt.Errorf("AccAddressFromHexUnsafe : %w", err)
 	}
 	if !signerAccAddress.Equals(signer) {
 		return false, fmt.Errorf("signer on VRFData is not the same as on the original relay request %s, %s", signerAccAddress.String(), signer.String())
@@ -190,7 +190,7 @@ func RecoverProviderPubKeyFromVrfDataOnly(dataReliability *pairingtypes.VRFData)
 	if err != nil {
 		return nil, fmt.Errorf("err: %w DataReliability: %+v", err, dataReliability)
 	}
-	providerAccAddress, err = sdk.AccAddressFromHex(pubKey.Address().String()) //consumer signer
+	providerAccAddress, err = sdk.AccAddressFromHexUnsafe(pubKey.Address().String()) //consumer signer
 	return
 }
 
@@ -241,6 +241,6 @@ func RecoverPubKeyFromResponseFinalizationData(relayResponse *pairingtypes.Relay
 func GenerateFloatingKey() (secretKey *btcSecp256k1.PrivateKey, addr sdk.AccAddress) {
 	secretKey, _ = btcSecp256k1.NewPrivateKey(btcSecp256k1.S256())
 	publicBytes := (secp256k1.PubKey)(secretKey.PubKey().SerializeCompressed())
-	addr, _ = sdk.AccAddressFromHex(publicBytes.Address().String())
+	addr, _ = sdk.AccAddressFromHexUnsafe(publicBytes.Address().String())
 	return
 }

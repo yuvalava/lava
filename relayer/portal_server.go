@@ -72,7 +72,11 @@ func PortalServer(
 	}
 	clientKey, _ := clientCtx.Keyring.Key(keyName)
 
-	utils.LavaFormatInfo("Client pubkey: "+fmt.Sprintf("%s", clientKey.GetPubKey().Address()), nil)
+	key, err := clientKey.GetPubKey()
+	if err != nil {
+		log.Fatalln("error: getPubKey", err)
+	}
+	utils.LavaFormatInfo("Client pubkey: "+fmt.Sprintf("%s", key.Address()), nil)
 
 	cacheAddr, err := flagSet.GetString(performance.CacheFlagName)
 	if err != nil {

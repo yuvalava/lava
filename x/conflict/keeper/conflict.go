@@ -69,7 +69,7 @@ func (k Keeper) ValidateResponseConflict(ctx sdk.Context, conflictData *types.Re
 		if err != nil {
 			return fmt.Errorf("invalid consumer signature in relay request %+v , error: %s", conflictRelayData.Request, err.Error())
 		}
-		derived_clientAddr, err := sdk.AccAddressFromHex(pubKey.Address().String())
+		derived_clientAddr, err := sdk.AccAddressFromHexUnsafe(pubKey.Address().String())
 		if err != nil {
 			return fmt.Errorf("invalid consumer address from signature in relay request %+v , error: %s", conflictRelayData.Request, err.Error())
 		}
@@ -96,9 +96,9 @@ func (k Keeper) ValidateResponseConflict(ctx sdk.Context, conflictData *types.Re
 		if err != nil {
 			return nil, fmt.Errorf("RecoverProviderPubKeyFromQueryAndAllDataHash %s provider: %w", print_st, err)
 		}
-		providerAddress, err = sdk.AccAddressFromHex(pubKey.Address().String())
+		providerAddress, err = sdk.AccAddressFromHexUnsafe(pubKey.Address().String())
 		if err != nil {
-			return nil, fmt.Errorf("AccAddressFromHex %s provider: %w", print_st, err)
+			return nil, fmt.Errorf("AccAddressFromHexUnsafe %s provider: %w", print_st, err)
 		}
 		_, err = k.epochstorageKeeper.GetStakeEntryForProviderEpoch(ctx, chainID, providerAddress, epochStart)
 		if err != nil {
@@ -125,9 +125,9 @@ func (k Keeper) ValidateResponseConflict(ctx sdk.Context, conflictData *types.Re
 		if err != nil {
 			return fmt.Errorf("RecoverPubKey %s provider ResponseFinalizationData: %w", print_st, err)
 		}
-		derived_providerAccAddress, err := sdk.AccAddressFromHex(pubKey.Address().String())
+		derived_providerAccAddress, err := sdk.AccAddressFromHexUnsafe(pubKey.Address().String())
 		if err != nil {
-			return fmt.Errorf("AccAddressFromHex %s provider ResponseFinalizationData: %w", print_st, err)
+			return fmt.Errorf("AccAddressFromHexUnsafe %s provider ResponseFinalizationData: %w", print_st, err)
 		}
 		if !derived_providerAccAddress.Equals(expectedAddress) {
 			return fmt.Errorf("mismatching %s provider address signature and responseFinazalizationData %s , %s", print_st, derived_providerAccAddress, expectedAddress)

@@ -6,9 +6,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/improbable-eng/grpc-web/go/grpcweb"
-	"golang.org/x/net/http2"
-	"golang.org/x/net/http2/h2c"
 	"math/rand"
 	"net"
 	"net/http"
@@ -19,6 +16,10 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/improbable-eng/grpc-web/go/grpcweb"
+	"golang.org/x/net/http2"
+	"golang.org/x/net/http2/h2c"
 
 	"golang.org/x/exp/slices"
 
@@ -539,7 +540,7 @@ func (s *relayServer) initRelay(ctx context.Context, request *pairingtypes.Relay
 	if err != nil {
 		return nil, nil, nil, nil, utils.LavaFormatError("get relay user", err, &map[string]string{})
 	}
-	userAddr, err := sdk.AccAddressFromHex(user.String())
+	userAddr, err := sdk.AccAddressFromHexUnsafe(user.String())
 	if err != nil {
 		return nil, nil, nil, nil, utils.LavaFormatError("get relay acc address", err, &map[string]string{})
 	}
@@ -959,7 +960,7 @@ func (relayServ *relayServer) VerifyReliabilityAddressSigning(ctx context.Contex
 		return false, utils.LavaFormatError("failed to Recover Provider PubKey From Vrf Data And Query", err,
 			&map[string]string{"consumer": consumer.String(), "request": fmt.Sprintf("%v", request)})
 	}
-	providerAccAddress, err := sdk.AccAddressFromHex(pubKey.Address().String()) //consumer signer
+	providerAccAddress, err := sdk.AccAddressFromHexUnsafe(pubKey.Address().String()) //consumer signer
 	if err != nil {
 		return false, utils.LavaFormatError("failed converting signer to address", err,
 			&map[string]string{"consumer": consumer.String(), "PubKey": pubKey.Address().String()})
@@ -1138,7 +1139,11 @@ func Server(
 	}
 	g_privKey = privKey
 	serverKey, _ := clientCtx.Keyring.Key(keyName)
-	utils.LavaFormatInfo("Server loaded keys", &map[string]string{"PublicKey": serverKey.GetPubKey().Address().String()})
+	pubKey, err := serverKey.GetPubKey()
+	if err != nil {
+		utils.LavaFormatFatal("provider failure to getPubKey", err, &map[string]string{"apiInterface": apiInterface, "ChainID": ChainID})
+	}
+	utils.LavaFormatInfo("Server loaded keys", &map[string]string{"PublicKey": pubKey.Address().String()})
 	//
 	// Node
 	//get portal logs
@@ -1213,7 +1218,7 @@ func Server(
 
 		shutdownCtx, shutdownRelease := context.WithTimeout(context.Background(), 10*time.Second)
 		defer shutdownRelease()
-		
+
 		if err := httpServer.Shutdown(shutdownCtx); err != nil {
 			utils.LavaFormatFatal("Provider failed to shutdown", err, &map[string]string{})
 		}

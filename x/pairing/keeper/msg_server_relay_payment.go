@@ -41,7 +41,7 @@ func (k msgServer) RelayPayment(goCtx context.Context, msg *types.MsgRelayPaymen
 		if err != nil {
 			return errorLogAndFormat("relay_payment_sig", map[string]string{"sig": string(relay.Sig)}, "recover PubKey from relay failed")
 		}
-		clientAddr, err := sdk.AccAddressFromHex(pubKey.Address().String())
+		clientAddr, err := sdk.AccAddressFromHexUnsafe(pubKey.Address().String())
 		if err != nil {
 			return errorLogAndFormat("relay_payment_user_addr", map[string]string{"user": pubKey.Address().String()}, "invalid user address in relay msg")
 		}

@@ -52,28 +52,28 @@ func InitAllKeepers(t testing.TB) (*Servers, *Keepers, context.Context) {
 
 	pairingStoreKey := sdk.NewKVStoreKey(pairingtypes.StoreKey)
 	pairingMemStoreKey := storetypes.NewMemoryStoreKey(pairingtypes.MemStoreKey)
-	stateStore.MountStoreWithDB(pairingStoreKey, sdk.StoreTypeIAVL, db)
-	stateStore.MountStoreWithDB(pairingMemStoreKey, sdk.StoreTypeMemory, nil)
+	stateStore.MountStoreWithDB(pairingStoreKey, storetypes.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(pairingMemStoreKey, storetypes.StoreTypeMemory, nil)
 
 	specStoreKey := sdk.NewKVStoreKey(spectypes.StoreKey)
 	specMemStoreKey := storetypes.NewMemoryStoreKey(spectypes.MemStoreKey)
-	stateStore.MountStoreWithDB(specStoreKey, sdk.StoreTypeIAVL, db)
-	stateStore.MountStoreWithDB(specMemStoreKey, sdk.StoreTypeMemory, nil)
+	stateStore.MountStoreWithDB(specStoreKey, storetypes.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(specMemStoreKey, storetypes.StoreTypeMemory, nil)
 
 	epochStoreKey := sdk.NewKVStoreKey(epochstoragetypes.StoreKey)
 	epochMemStoreKey := storetypes.NewMemoryStoreKey(epochstoragetypes.MemStoreKey)
-	stateStore.MountStoreWithDB(epochStoreKey, sdk.StoreTypeIAVL, db)
-	stateStore.MountStoreWithDB(epochMemStoreKey, sdk.StoreTypeMemory, nil)
+	stateStore.MountStoreWithDB(epochStoreKey, storetypes.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(epochMemStoreKey, storetypes.StoreTypeMemory, nil)
 
 	paramsStoreKey := sdk.NewKVStoreKey(paramstypes.StoreKey)
-	stateStore.MountStoreWithDB(paramsStoreKey, sdk.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(paramsStoreKey, storetypes.StoreTypeIAVL, db)
 	tkey := sdk.NewTransientStoreKey(paramstypes.TStoreKey)
-	stateStore.MountStoreWithDB(tkey, sdk.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(tkey, storetypes.StoreTypeIAVL, db)
 
 	conflictStoreKey := sdk.NewKVStoreKey(conflicttypes.StoreKey)
 	conflictMemStoreKey := storetypes.NewMemoryStoreKey(conflicttypes.MemStoreKey)
-	stateStore.MountStoreWithDB(conflictStoreKey, sdk.StoreTypeIAVL, db)
-	stateStore.MountStoreWithDB(conflictMemStoreKey, sdk.StoreTypeMemory, nil)
+	stateStore.MountStoreWithDB(conflictStoreKey, storetypes.StoreTypeIAVL, db)
+	stateStore.MountStoreWithDB(conflictMemStoreKey, storetypes.StoreTypeMemory, nil)
 
 	require.NoError(t, stateStore.LoadLatestVersion())
 

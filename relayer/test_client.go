@@ -67,7 +67,11 @@ func TestClient(
 		log.Fatalln("error: getPrivKey", err)
 	}
 	clientKey, _ := clientCtx.Keyring.Key(keyName)
-	log.Println("Client pubkey", clientKey.GetPubKey().Address())
+	pubKey, err := clientKey.GetPubKey()
+	if err != nil {
+		log.Fatalln("error: getPubKey", err)
+	}
+	log.Println("Client pubkey", pubKey.Address())
 
 	testDuration := time.Second * time.Duration(duration)
 	// Run tests

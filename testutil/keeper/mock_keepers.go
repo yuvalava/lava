@@ -71,7 +71,7 @@ func (k *mockBankKeeper) SendCoinsFromModuleToAccount(ctx sdk.Context, senderMod
 		if coins, ok := module[recipientAddr.String()]; ok {
 			if coins[0].IsGTE(coin) {
 				k.balance[recipientAddr.String()] = k.balance[recipientAddr.String()].Add(coin)
-				module[recipientAddr.String()] = module[recipientAddr.String()].Sub(amt)
+				module[recipientAddr.String()] = module[recipientAddr.String()].Sub(amt...)
 				k.SubFromBalance(moduleAcc, amt)
 				return nil
 			}
@@ -104,7 +104,7 @@ func (k *mockBankKeeper) AddToBalance(addr sdk.AccAddress, amounts sdk.Coins) er
 
 func (k *mockBankKeeper) SubFromBalance(addr sdk.AccAddress, amounts sdk.Coins) error {
 	if _, ok := k.balance[addr.String()]; ok {
-		k.balance[addr.String()] = k.balance[addr.String()].Sub(amounts)
+		k.balance[addr.String()] = k.balance[addr.String()].Sub(amounts...)
 	} else {
 		return fmt.Errorf("acount is empty, can't sub")
 	}
