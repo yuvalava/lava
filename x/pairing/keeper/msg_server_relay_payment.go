@@ -277,7 +277,7 @@ func (k msgServer) RelayPayment(goCtx context.Context, msg *types.MsgRelayPaymen
 		// deal with unresponsive providers
 		err = k.dealWithUnresponsiveProviders(ctx, relay.UnresponsiveProviders, logger, clientAddr, epochStart, relay.ChainID)
 		if err != nil {
-			utils.LogLavaEvent(ctx, logger, types.UnresponsiveProviderUnstakeFailedEventName, map[string]string{"err:": err.Error()}, "Error Unresponsive Providers could not unstake")
+			utils.LogLavaEvent(ctx, logger, types.UnresponsiveProviderUnstakeFailedEventName, map[string]string{"err:": "BAD!"}, "Error Unresponsive Providers could not unstake")
 		}
 	}
 	return &types.MsgRelayPaymentResponse{}, nil
