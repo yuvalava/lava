@@ -15,11 +15,11 @@
                 "allowed_block_lag_for_qos_sync": "2",
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "1000"
+                    "amount": "500000000000"
                 },
                 "min_stake_client": {
                     "denom": "ulava",
-                    "amount": "100"
+                    "amount": "5000000000"
                 },
                 "apis": [
                     {
@@ -3729,7 +3729,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3753,7 +3753,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3777,7 +3777,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3801,7 +3801,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3825,7 +3825,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3849,7 +3849,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3873,7 +3873,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3897,7 +3897,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3921,7 +3921,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3945,7 +3945,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3969,7 +3969,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -3993,7 +3993,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4017,7 +4017,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4041,7 +4041,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4065,7 +4065,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4091,7 +4091,7 @@
                             "parser_func": "PARSE_DICTIONARY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4127,7 +4127,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4164,7 +4164,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4188,7 +4188,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4212,7 +4212,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4236,7 +4236,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4260,7 +4260,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4284,7 +4284,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4308,7 +4308,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4332,7 +4332,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4356,7 +4356,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4380,7 +4380,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4404,7 +4404,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4428,7 +4428,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4452,7 +4452,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4476,7 +4476,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4500,7 +4500,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4524,7 +4524,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4548,7 +4548,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4572,7 +4572,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4596,7 +4596,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4620,7 +4620,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4644,7 +4644,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4668,7 +4668,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4692,7 +4692,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4716,7 +4716,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4740,7 +4740,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4764,7 +4764,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4788,7 +4788,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4812,7 +4812,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4836,7 +4836,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4860,7 +4860,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4884,7 +4884,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4908,7 +4908,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4932,7 +4932,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4956,7 +4956,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -4980,7 +4980,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5004,7 +5004,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5028,7 +5028,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5052,7 +5052,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5076,7 +5076,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5100,7 +5100,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5124,7 +5124,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5148,7 +5148,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5172,7 +5172,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5196,7 +5196,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5220,7 +5220,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5255,7 +5255,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5279,7 +5279,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5303,7 +5303,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5338,7 +5338,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5362,7 +5362,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5386,7 +5386,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5410,7 +5410,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5434,7 +5434,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5458,7 +5458,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5482,7 +5482,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5506,7 +5506,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5530,7 +5530,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5554,7 +5554,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5578,7 +5578,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5602,7 +5602,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5626,7 +5626,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5650,7 +5650,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5674,7 +5674,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -5794,7 +5794,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6226,7 +6226,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6274,7 +6274,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6490,7 +6490,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6514,7 +6514,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6538,7 +6538,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -6567,11 +6567,11 @@
                 "allowed_block_lag_for_qos_sync": "2",
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "1000"
+                    "amount": "500000000000"
                 },
                 "min_stake_client": {
                     "denom": "ulava",
-                    "amount": "100"
+                    "amount": "5000000000"
                 },
                 "apis": [
                     {
@@ -10281,7 +10281,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10305,7 +10305,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10329,7 +10329,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10353,7 +10353,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10377,7 +10377,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10401,7 +10401,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10425,7 +10425,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10449,7 +10449,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10473,7 +10473,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10497,7 +10497,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10521,7 +10521,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10545,7 +10545,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10569,7 +10569,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10593,7 +10593,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10617,7 +10617,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10643,7 +10643,7 @@
                             "parser_func": "PARSE_DICTIONARY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10679,7 +10679,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10716,7 +10716,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10740,7 +10740,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10764,7 +10764,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10788,7 +10788,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10812,7 +10812,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10836,7 +10836,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10860,7 +10860,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10884,7 +10884,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10908,7 +10908,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10932,7 +10932,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10956,7 +10956,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -10980,7 +10980,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11004,7 +11004,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11028,7 +11028,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11052,7 +11052,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11076,7 +11076,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11100,7 +11100,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11124,7 +11124,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11148,7 +11148,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11172,7 +11172,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11196,7 +11196,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11220,7 +11220,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11244,7 +11244,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11268,7 +11268,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11292,7 +11292,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11316,7 +11316,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11340,7 +11340,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11364,7 +11364,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11388,7 +11388,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11412,7 +11412,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11436,7 +11436,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11460,7 +11460,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11484,7 +11484,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11508,7 +11508,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11532,7 +11532,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11556,7 +11556,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11580,7 +11580,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11604,7 +11604,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11628,7 +11628,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11652,7 +11652,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11676,7 +11676,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11700,7 +11700,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11724,7 +11724,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11748,7 +11748,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11772,7 +11772,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11807,7 +11807,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11831,7 +11831,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11855,7 +11855,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11890,7 +11890,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11914,7 +11914,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11938,7 +11938,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11962,7 +11962,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -11986,7 +11986,7 @@
                             "parser_func": "PARSE_BY_ARG"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12010,7 +12010,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12034,7 +12034,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12058,7 +12058,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12082,7 +12082,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12106,7 +12106,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12130,7 +12130,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12154,7 +12154,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12178,7 +12178,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12202,7 +12202,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12226,7 +12226,7 @@
                             "parser_func": "EMPTY"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12346,7 +12346,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12778,7 +12778,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -12826,7 +12826,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -13042,7 +13042,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -13066,7 +13066,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {
@@ -13090,7 +13090,7 @@
                             "parser_func": "DEFAULT"
                         },
                         "compute_units": "10",
-                        "enabled": true,
+                        "enabled": false,
                         "api_interfaces": [
                             {
                                 "category": {

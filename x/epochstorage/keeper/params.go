@@ -15,7 +15,7 @@ func (k Keeper) GetParams(ctx sdk.Context) types.Params {
 		k.EpochBlocksRaw(ctx),
 		k.EpochsToSaveRaw(ctx),
 		k.LatestParamChange(ctx),
-		k.UnstakeHoldBlocksStaticRaw(ctx),
+		1400,
 	)
 }
 
