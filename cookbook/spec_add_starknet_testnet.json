@@ -1,6 +1,6 @@
 {
     "proposal": {
-        "title": "Add Specs: StarkNet",
+        "title": "Add Specs: StarkNet testnet",
         "description": "Adding new specification support for relaying StarkNet data on Lava",
         "specs": [
             {
