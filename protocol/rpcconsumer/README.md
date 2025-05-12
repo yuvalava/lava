@@ -1,10 +1,11 @@
-# Infra Manager
+# Smart Router
 
-The Infra Manager is a smart router that supports any RPC (Lava, Alchemy, self-hosted etc.) and chooses the best nodes for you with automatic failover, error recovery, smart caching, fast TXs and more.
+The Smart Router connects to any number of RPCs (Lava, Alchemy, self-hosted etc.) to maximize uptime and performance.
+It chooses the best nodes based on quality of service, with automatic failover, error recovery, customizable cache, fast TX propagation and more.
 
 Being one of the core components in the Lava stack, it is already used and trusted by teams like Fireblocks, Movement, Arbiturm, NEAR, Fileocin, Cosmos and many more.
 
-The Infra Manager:
+Functionality:
 1) Routes requests to the best nodes based on reliability, speed, and sync
 2) Automatically retries and fallbacks when providers face errors or downtime
 3) Delivers faster transaction propagation by broadcasting to all providers at once
